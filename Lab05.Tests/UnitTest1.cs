@@ -20,7 +20,7 @@ public class Tests
     [Test]
     public void RNPositiveNegativeTest()     // Tests that (12/-6) will return (2/-1), Unit Test #2
     {
-        var test = new RationalNumber(-12, 6);
+        var test = new RationalNumber(12, -6);
         
         Assert.Multiple(() =>
         {
