@@ -120,4 +120,9 @@ public class Tests
             Assert.That(test.GetHashCode().Equals(testcompare.GetHashCode()), Is.True);
         });
     }
+    [Test]
+    public void RNZeroDivideTest()     // Makes sure that the RN constructor throws if the denominator is 0
+    {
+        Assert.Throws<DivideByZeroException>(() => new RationalNumber(1, 0));
+    }
 }

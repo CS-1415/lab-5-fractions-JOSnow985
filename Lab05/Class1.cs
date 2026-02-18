@@ -9,6 +9,9 @@ public class RationalNumber
     // Constructors
     public RationalNumber(int numerator, int denominator)
     {
+        // Can't divide by zero!
+        if (denominator == 0) throw new DivideByZeroException("Rational Number constructor attempted to use 0 as a denominator");
+        
         // We want a positive rational number if we're dividing a negative by a negative
         if (numerator < 0 && denominator < 0)
         {
