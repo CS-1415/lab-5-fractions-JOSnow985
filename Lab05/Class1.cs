@@ -9,9 +9,15 @@ public class RationalNumber
     // Constructors
     public RationalNumber(int numerator, int denominator)
     {
-        // Find GCD
+        // We want a positive rational number if we're dividing a negative by a negative
+        if (numerator < 0 && denominator < 0)
+        {
+            numerator = Math.Abs(numerator);
+            denominator = Math.Abs(denominator);
+        }
+
+        // Divide both numerator and denominator by the gcd and set our fields
         int gcd = GreatestCommonDenominator(numerator, denominator);
-        // Divide both numerator and denominator by gcd and set our fields
         _numerator = numerator / gcd;
         _denominator = denominator / gcd;
     }
