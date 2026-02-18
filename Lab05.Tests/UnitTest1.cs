@@ -2,10 +2,9 @@ namespace Lab05.Tests;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
+    // [SetUp]
+    // public void Setup(){}
+    // Assert.Pass();
 
     [Test]
     public void ClassTest()     // Tests our class has the properties and types
