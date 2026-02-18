@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05.Main/Lab05.Main.csproj": {}
+  },
+  "projects": {
+    "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05.Main/Lab05.Main.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05.Main/Lab05.Main.csproj",
+        "projectName": "Lab05.Main",
+        "projectPath": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05.Main/Lab05.Main.csproj",
+        "packagesPath": "/home/nobaraneko/.nuget/packages/",
+        "outputPath": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05.Main/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/nobaraneko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05/Lab05.csproj": {
+                "projectPath": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05/Lab05.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05/Lab05.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05/Lab05.csproj",
+        "projectName": "Lab05",
+        "projectPath": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05/Lab05.csproj",
+        "packagesPath": "/home/nobaraneko/.nuget/packages/",
+        "outputPath": "/home/nobaraneko/Documents/School/CS1410/lab-5-fractions-JOSnow985/Lab05/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/nobaraneko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
