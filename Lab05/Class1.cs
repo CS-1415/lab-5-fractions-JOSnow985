@@ -60,8 +60,8 @@ public class MixedNumber
     {
         // Math.DivRem() gives us the quotient and the remainder at the same time
         _wholeunits = Math.DivRem(rn.Numerator, rn.Denominator, out int remainder);
-        // Doesn't handle the weird negative behavior yet
-        _partialunits = new RationalNumber(remainder,rn.Denominator);
+        // Our fraction should always be positive because our whole unit receives the negative sign
+        _partialunits = new RationalNumber(Math.Abs(remainder),Math.Abs(rn.Denominator));
     }
     public MixedNumber(int n, int d) : this(new RationalNumber(n, d)) {}
     // Properties

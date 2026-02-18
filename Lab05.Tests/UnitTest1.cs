@@ -125,4 +125,16 @@ public class Tests
     {
         Assert.Throws<DivideByZeroException>(() => new RationalNumber(1, 0));
     }
+    [Test]
+    public void MNNegativeHandlingTest()     // Testing my remainder solution
+    {
+        var test = new MixedNumber(-25, 5);
+        var testTwo = new MixedNumber(25, -5);
+        
+        Assert.Multiple(() =>
+        {
+            Assert.That(test.WholeUnits.Equals(-5), Is.True);
+            Assert.That(testTwo.WholeUnits.Equals(-5), Is.True);
+        });
+    }
 }
