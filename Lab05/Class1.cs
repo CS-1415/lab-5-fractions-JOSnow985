@@ -39,3 +39,39 @@ public class RationalNumber
     // Recursive Method to eventually return the greatest common denominator
     private static int GreatestCommonDenominator(int a, int b) => b == 0 ? Math.Abs(a) : GreatestCommonDenominator(b, a % b);
 }
+
+public class MixedNumber
+{
+    // Fields
+    private readonly int _wholeunits;
+    private readonly RationalNumber _partialunits;
+
+    // Constructors
+    public MixedNumber(RationalNumber rn)
+    {
+        // Math.DivRem() gives us the quotient and the remainder at the same time
+        _wholeunits = Math.DivRem(rn.Numerator, rn.Denominator, out int remainder);
+        // Doesn't handle the weird negative behavior yet
+        _partialunits = new RationalNumber(remainder,rn.Denominator);
+    }
+    public MixedNumber(int n, int d) : this(new RationalNumber(n, d)) {}
+    // Properties
+    public int WholeUnits => _wholeunits;
+
+    public RationalNumber PartialUnits => _partialunits;
+
+    //Methods
+    // Overriding Equals(object? obj) 
+    public override bool Equals(object? obj)
+    {   
+        MixedNumber? mn = obj as MixedNumber;
+        if (mn == null) 
+            return false;
+        else if (mn.WholeUnits != WholeUnits || mn.PartialUnits != PartialUnits) 
+            return false;
+        else
+            return true;
+    }
+    // Overriding GetHashCode(), uses both Numerator and Denominator
+    public override int GetHashCode() => HashCode.Combine(WholeUnits, PartialUnits);
+}
