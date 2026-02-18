@@ -67,7 +67,7 @@ public class MixedNumber
         MixedNumber? mn = obj as MixedNumber;
         if (mn == null) 
             return false;
-        else if (mn.WholeUnits != WholeUnits || mn.PartialUnits != PartialUnits) 
+        else if (WholeUnits != mn.WholeUnits || !PartialUnits.Equals(mn.PartialUnits))
             return false;
         else
             return true;
